@@ -35,63 +35,10 @@ El notebook se guardó con sus salidas, así que se puede revisar directamente e
 
 El archivo ya está incluido en el repositorio. Si por alguna razón no aparece, se puede descargar desde el enlace de Kaggle y guardarlo en la carpeta principal del repositorio, **con el mismo nombre** y al lado del notebook.
 
-## Requisitos
-
-- Python 3.10 o superior.
-- Las librerías de `requirements.txt`: pandas, numpy, matplotlib, seaborn, scikit-learn y Jupyter Notebook.
-
 ## Cómo ejecutar el notebook
 
-### Opción 1: en el computador
 
-**1. Clonar el repositorio**
-
-```bash
-git clone https://github.com/<usuario>/<repositorio>.git
-cd <repositorio>
-```
-
-También se puede descargar como ZIP desde el botón verde **Code → Download ZIP** de GitHub y descomprimirlo.
-
-**2. Crear y activar un entorno virtual** (recomendado, para no mezclar versiones de librerías)
-
-En Windows:
-
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-```
-
-En macOS o Linux:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-**3. Instalar las librerías**
-
-```bash
-pip install -r requirements.txt
-```
-
-**4. Abrir el notebook**
-
-```bash
-jupyter notebook EDA_BlackLegend.ipynb
-```
-
-Se abre una pestaña en el navegador con el notebook.
-
-**5. Ejecutar todas las celdas**
-
-En el menú, ir a **Kernel → Restart Kernel and Run All Cells**. La ejecución completa tarda menos de un minuto.
-
-> **Con Anaconda:** en lugar de los pasos 2 y 3 se puede crear un entorno con `conda create -n blacklegend python=3.11`, activarlo con `conda activate blacklegend` y luego correr `pip install -r requirements.txt`.
->
-> **Con VS Code** (con la extensión de Jupyter): abrir la carpeta del repositorio, abrir `EDA_BlackLegend.ipynb`, seleccionar como kernel el Python del entorno `.venv` (arriba a la derecha) y usar el botón **Run All**.
-
-### Opción 2: en Google Colab (sin instalar nada)
+### En Google Colab (sin instalar nada)
 
 1. Abrir el notebook en Colab con este enlace (cambiando `<usuario>` y `<repositorio>`; el repositorio debe ser público):
    `https://colab.research.google.com/github/<usuario>/<repositorio>/blob/main/EDA_BlackLegend.ipynb`
